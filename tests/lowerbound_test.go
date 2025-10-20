@@ -66,6 +66,12 @@ func TestLowerBound(t *testing.T) {
 			value:  7,
 			result: 2,
 		},
+		{
+			name:   "multiple repeating",
+			arg:    []int64{1, 2, 2, 2, 3, 4},
+			value:  2,
+			result: 1,
+		},
 	}
 
 	for _, tt := range tableTests {
