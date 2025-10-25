@@ -20,6 +20,16 @@ func TestSum(t *testing.T) {
 
 	tableTests := []testCases{
 		{
+			name:   "null size",
+			arg:    []int32{},
+			result: 0,
+		},
+		{
+			name:   "null sum",
+			arg:    []int32{1, -1, 2, -2},
+			result: 0,
+		},
+		{
 			name:   "positive",
 			arg:    []int32{1, 2, 3},
 			result: 6,
