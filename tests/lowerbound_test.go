@@ -134,7 +134,7 @@ func TestPerformance(t *testing.T) {
 		}
 	})
 
-	require.Less(t, (float64(solution.NsPerOp())+10e-9)/(float64(check.NsPerOp())+10e-9), 3.0)
+	require.Less(t, (float64(solution.NsPerOp())+10e-9)/(float64(check.NsPerOp())+10e-9), 1.0)
 }
 
 func TestLowerBoundAdvanced(t *testing.T) {
