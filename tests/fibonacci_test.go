@@ -56,6 +56,16 @@ func TestFibonacci(t *testing.T) {
 			n:         93,
 			expResult: 12200160415121876738,
 		},
+		{
+			name:      "94",
+			n:         94,
+			expResult: 0,
+		},
+		{
+			name:      "100",
+			n:         100,
+			expResult: 0,
+		},
 	}
 
 	for _, tt := range testCases {
